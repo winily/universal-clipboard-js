@@ -1,12 +1,12 @@
 # universal-clipboard-js
 
-Ready to be a universal clipboard library for all platforms.
+准备成为一个全平台通用的剪贴板库
 
-<a href="./README-CN.md">中文</a>｜English
+中文｜<a href="./README.md">English</a>
 
-## How to use
+## 如何使用它
 
-very simple
+非常的简单，就看以下代码，我不信你不会用
 
 ```js
 const { readText, writeText, FORMAT_FILE_URL } = require('../index.js')
@@ -25,20 +25,20 @@ console.log(
 ## API
 
 ```ts
-// clear your clipboard
+// 清空你的剪贴板
 export function clear(): void
 
-// read or write buffer to clipboard
-// The default value of format is FORMAT_PLAIN_TEXT
+// 从剪贴板读或者写入 buffer
+// format 的默认值是 FORMAT_PLAIN_TEXT 文本类型
 export function readBuffer(format?: string): Buffer
 export function writeBuffer(data: Buffer, format?: string): boolean
 
-// read or write text to clipboard
-// The default value of format is FORMAT_PLAIN_TEXT
+// 从剪贴板读或者写入 字符串
+// format 的默认值是 FORMAT_PLAIN_TEXT 文本类型
 export function readText(format?: string): string
 export function writeText(text: string, format?: string): boolean
 
-// clipboard content fromat, text or file path
+// 剪贴板的数据格式类型枚举
 export const FORMAT_PLAIN_TEXT: string
 export const FORMAT_FILE_URL: string
 ```
@@ -49,6 +49,6 @@ export const FORMAT_FILE_URL: string
 - Linux
 - ......
 
-## Support
+## 支持的平台
 
 - MacOS

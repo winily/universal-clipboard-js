@@ -1,21 +1,19 @@
 {
   "name": "universal-clipboard-js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
+  "description": "Ready to be a universal clipboard library for all platforms",
   "scripts": {
     "build": "sh ./scripts/build.sh",
     "test": "$BUILD || yarn build && node test/test.js",
     "install": "cmake-js compile"
   },
   "repository": "git@github.com:winily/universal-clipboard-js.git",
-  "author": "lijiabao <2675835744@qq.com>",
+  "author": "winily <18934086807@163.com>",
   "license": "MIT",
   "dependencies": {
     "bindings": "^1.5.0",
     "cmake-js": "^7.0.0",
     "node-addon-api": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.4"
   }
 }
