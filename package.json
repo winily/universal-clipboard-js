@@ -1,6 +1,6 @@
 {
   "name": "universal-clipboard-js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "description": "Ready to be a universal clipboard library for all platforms",
   "scripts": {
