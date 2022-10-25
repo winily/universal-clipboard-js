@@ -33,7 +33,12 @@ else()
 endif()
 
 include_directories(${CMAKE_JS_INC})
-include_directories(${CMAKE_CURRENT_LIST_FILE} ./node_modules/node-addon-api)
+
+if(NOT EXISTS ../node-addon-api)
+  include_directories(${CMAKE_CURRENT_LIST_FILE} ./node_modules/node-addon-api)
+else()
+  include_directories(${CMAKE_CURRENT_LIST_FILE} ../node-addon-api)
+endif()
 
 MESSAGE( STATUS "CMAKE_JS_INC = ${CMAKE_JS_INC}.")
 

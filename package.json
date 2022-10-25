@@ -1,6 +1,6 @@
 {
   "name": "universal-clipboard-js",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "index.js",
   "description": "Ready to be a universal clipboard library for all platforms",
   "scripts": {
@@ -15,5 +15,12 @@
     "bindings": "^1.5.0",
     "cmake-js": "^7.0.0",
     "node-addon-api": "^5.0.0"
-  }
+  },
+  "private": false,
+  "keywords": [
+    "clipboard",
+    "MacOs",
+    "Windows",
+    "Linux"
+  ]
 }
